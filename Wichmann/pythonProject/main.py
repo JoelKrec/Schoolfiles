@@ -9,7 +9,7 @@ import os
 
 console = Console()
 clientId = "9ccea7a811194571b834ec6571f4c51f"
-clientSecret = "eece1e728d8e48109c870f10751c48cd"
+clientSecret = ""
 keyUp = 'KEY_UP'
 keyDown = 'KEY_DOWN'
 
@@ -168,6 +168,10 @@ def getUserInput(header, options):
 
 console.clear()
 while True:
+    clientSecret= input("Please enter your secret client id: ")
+    
+    console.print("\n\n\n")
+    
     console.print("Please enter an artist to search for: ")
     artistSearch = input()
 
